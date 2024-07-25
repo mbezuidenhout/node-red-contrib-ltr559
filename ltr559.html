@@ -1,0 +1,47 @@
+<script type="text/x-red" data-template-name="ltr559">
+  <div class="form-row">
+      <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+      <input type="text" id="node-input-name" />
+  </div>
+
+  <div class="form-row">
+      <label for="node-input-bus"><i class="fa fa-microchip"></i> Bus #</label>
+      <input type="text" id="node-input-bus" />
+  </div>
+
+  <div class="form-row">
+      <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+      <input type="text" id="node-input-topic">
+  </div>
+
+</script>
+<script type="text/javascript">
+    RED.nodes.registerType('ltr559',{
+        category: 'sensor',
+        color: '#E35253',
+        defaults: {
+            name:  {value: "", required: false},
+            bus:   {value: "1", required: true, validate: RED.validators.number() },
+            topic: { value: 'ltr559', required: false },
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-sun-o",
+        label: function() {
+            return this.name||"ltr559";
+        },
+	outputLabels: ["Sensor reads"],
+	inputLabels: ["Trigger"]
+    });
+</script>
+
+<script type="text/html" data-template-name="ltr559">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="ltr559">
+    <p>Read sensor data from the i2c Lite-on LTR559 light and proximity sensor</p>
+</script>

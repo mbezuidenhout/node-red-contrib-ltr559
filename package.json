@@ -1,0 +1,38 @@
+{
+  "name": "@bezuidenhout/node-red-contrib-ltr559",
+  "version": "0.1.1",
+  "description": "Interface for the Lite-on LTR559 light and proximity sensor",
+  "main": "ltr559.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "ltr559": "ltr559.js"
+    }
+  },
+  "keywords": [
+    "Lite-On",
+    "Pimoroni",
+    "rpi",
+    "raspberry",
+    "Beaglebone",
+    "orangepi",
+    "sensor",
+    "light",
+    "lux",
+    "proximity"
+  ],
+  "author": "Marius Bezuidenhout",
+  "license": "MIT",
+  "dependencies": {
+    "@bezuidenhout/ltr559-sensor": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbezuidenhout/node-red-contrib-ltr559.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbezuidenhout/node-red-contrib-ltr559/issues"
+  }
+}
