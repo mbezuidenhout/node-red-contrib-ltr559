@@ -1,6 +1,6 @@
 {
   "name": "@bezuidenhout/node-red-contrib-ltr559",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Interface for the Lite-on LTR559 light and proximity sensor",
   "main": "ltr559.js",
   "scripts": {
@@ -12,6 +12,7 @@
     }
   },
   "keywords": [
+    "node-red",
     "Lite-On",
     "Pimoroni",
     "rpi",
